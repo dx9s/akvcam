@@ -1,0 +1,1183 @@
+May 26 09:57:21 wdp76 kernel: [   74.169760] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 09:57:21 wdp76 kernel: [   74.170489] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 09:57:21 wdp76 kernel: [   74.170867] [akvcam] driver.c(596): Virtual Devices:
+May 26 09:57:21 wdp76 kernel: [   74.170868] [akvcam] driver.c(597): 
+May 26 09:57:21 wdp76 kernel: [   74.170868] [akvcam] driver.c(605): Device: /dev/video2
+May 26 09:57:21 wdp76 kernel: [   74.170868] [akvcam] driver.c(606): 	Description: VCam1(4:3/720p)
+May 26 09:57:21 wdp76 kernel: [   74.170869] [akvcam] driver.c(609): 	Type: Output
+May 26 09:57:21 wdp76 kernel: [   74.170869] [akvcam] driver.c(614): 	Modes:
+May 26 09:57:21 wdp76 kernel: [   74.170869] [akvcam] driver.c(618): 		ReadWrite
+May 26 09:57:21 wdp76 kernel: [   74.170870] [akvcam] driver.c(621): 		MMap
+May 26 09:57:21 wdp76 kernel: [   74.170870] [akvcam] driver.c(624): 		UserPtr
+May 26 09:57:21 wdp76 kernel: [   74.170870] [akvcam] driver.c(627): 	User Controls: No
+May 26 09:57:21 wdp76 kernel: [   74.170870] [akvcam] driver.c(653): 	Formats:
+May 26 09:57:21 wdp76 kernel: [   74.170871] [akvcam] driver.c(662): 		RGB24 960x720 30/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170872] [akvcam] driver.c(662): 		RGB24 960x720 15/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170873] [akvcam] driver.c(662): 		RGB24 960x720 15/2 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170873] [akvcam] driver.c(662): 		YUY2 960x720 30/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170874] [akvcam] driver.c(662): 		YUY2 960x720 15/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170874] [akvcam] driver.c(662): 		YUY2 960x720 15/2 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170875] [akvcam] driver.c(662): 		RGB24 640x480 30/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170890] [akvcam] driver.c(662): 		RGB24 640x480 15/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170890] [akvcam] driver.c(662): 		RGB24 640x480 15/2 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170891] [akvcam] driver.c(680): 	Connections:
+May 26 09:57:21 wdp76 kernel: [   74.170891] [akvcam] driver.c(688): 		/dev/video3
+May 26 09:57:21 wdp76 kernel: [   74.170891] [akvcam] driver.c(634): 
+May 26 09:57:21 wdp76 kernel: [   74.170892] [akvcam] driver.c(605): Device: /dev/video3
+May 26 09:57:21 wdp76 kernel: [   74.170892] [akvcam] driver.c(606): 	Description: VCam1(4:3/480p/720p)
+May 26 09:57:21 wdp76 kernel: [   74.170892] [akvcam] driver.c(611): 	Type: Capture
+May 26 09:57:21 wdp76 kernel: [   74.170893] [akvcam] driver.c(614): 	Modes:
+May 26 09:57:21 wdp76 kernel: [   74.170893] [akvcam] driver.c(618): 		ReadWrite
+May 26 09:57:21 wdp76 kernel: [   74.170893] [akvcam] driver.c(621): 		MMap
+May 26 09:57:21 wdp76 kernel: [   74.170893] [akvcam] driver.c(624): 		UserPtr
+May 26 09:57:21 wdp76 kernel: [   74.170894] [akvcam] driver.c(627): 	User Controls: No
+May 26 09:57:21 wdp76 kernel: [   74.170894] [akvcam] driver.c(653): 	Formats:
+May 26 09:57:21 wdp76 kernel: [   74.170894] [akvcam] driver.c(662): 		RGB24 640x480 30/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170895] [akvcam] driver.c(662): 		RGB24 640x480 15/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170895] [akvcam] driver.c(662): 		RGB24 640x480 15/2 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170896] [akvcam] driver.c(662): 		RGB24 960x720 30/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170896] [akvcam] driver.c(662): 		RGB24 960x720 15/1 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170897] [akvcam] driver.c(662): 		RGB24 960x720 15/2 Hz
+May 26 09:57:21 wdp76 kernel: [   74.170897] [akvcam] driver.c(680): 	Connections:
+May 26 09:57:21 wdp76 kernel: [   74.170898] [akvcam] driver.c(688): 		/dev/video2
+May 26 09:57:21 wdp76 kernel: [   74.170898] [akvcam] driver.c(634): 
+May 26 09:57:21 wdp76 kernel: [   74.172297] [akvcam] node.c(134): akvcam_node_open()
+May 26 09:57:21 wdp76 kernel: [   74.172303] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+May 26 09:57:21 wdp76 kernel: [   74.172366] [akvcam] node.c(281): akvcam_node_release()
+May 26 09:57:21 wdp76 kernel: [   74.172521] [akvcam] node.c(134): akvcam_node_open()
+May 26 09:57:21 wdp76 kernel: [   74.172526] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+May 26 09:57:21 wdp76 kernel: [   74.172561] [akvcam] node.c(281): akvcam_node_release()
+May 26 10:07:15 wdp76 kernel: [  668.116455] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:15 wdp76 kernel: [  668.117068] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:15 wdp76 kernel: [  668.117335] [akvcam] driver.c(596): Virtual Devices:
+May 26 10:07:15 wdp76 kernel: [  668.117335] [akvcam] driver.c(597): 
+May 26 10:07:15 wdp76 kernel: [  668.117336] [akvcam] driver.c(605): Device: /dev/video2
+May 26 10:07:15 wdp76 kernel: [  668.117336] [akvcam] driver.c(606): 	Description: VCam1(4:3/720p)
+May 26 10:07:15 wdp76 kernel: [  668.117336] [akvcam] driver.c(609): 	Type: Output
+May 26 10:07:15 wdp76 kernel: [  668.117337] [akvcam] driver.c(614): 	Modes:
+May 26 10:07:15 wdp76 kernel: [  668.117337] [akvcam] driver.c(618): 		ReadWrite
+May 26 10:07:15 wdp76 kernel: [  668.117337] [akvcam] driver.c(621): 		MMap
+May 26 10:07:15 wdp76 kernel: [  668.117338] [akvcam] driver.c(624): 		UserPtr
+May 26 10:07:15 wdp76 kernel: [  668.117338] [akvcam] driver.c(627): 	User Controls: No
+May 26 10:07:15 wdp76 kernel: [  668.117338] [akvcam] driver.c(653): 	Formats:
+May 26 10:07:15 wdp76 kernel: [  668.117339] [akvcam] driver.c(662): 		RGB24 960x720 30/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117340] [akvcam] driver.c(662): 		RGB24 960x720 15/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117340] [akvcam] driver.c(662): 		RGB24 960x720 15/2 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117341] [akvcam] driver.c(662): 		YUY2 960x720 30/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117341] [akvcam] driver.c(662): 		YUY2 960x720 15/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117342] [akvcam] driver.c(662): 		YUY2 960x720 15/2 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117343] [akvcam] driver.c(662): 		RGB24 640x480 30/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117343] [akvcam] driver.c(662): 		RGB24 640x480 15/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117344] [akvcam] driver.c(662): 		RGB24 640x480 15/2 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117344] [akvcam] driver.c(680): 	Connections:
+May 26 10:07:15 wdp76 kernel: [  668.117344] [akvcam] driver.c(688): 		/dev/video3
+May 26 10:07:15 wdp76 kernel: [  668.117345] [akvcam] driver.c(634): 
+May 26 10:07:15 wdp76 kernel: [  668.117345] [akvcam] driver.c(605): Device: /dev/video3
+May 26 10:07:15 wdp76 kernel: [  668.117345] [akvcam] driver.c(606): 	Description: VCam1(4:3/480p/720p)
+May 26 10:07:15 wdp76 kernel: [  668.117346] [akvcam] driver.c(611): 	Type: Capture
+May 26 10:07:15 wdp76 kernel: [  668.117346] [akvcam] driver.c(614): 	Modes:
+May 26 10:07:15 wdp76 kernel: [  668.117346] [akvcam] driver.c(618): 		ReadWrite
+May 26 10:07:15 wdp76 kernel: [  668.117347] [akvcam] driver.c(621): 		MMap
+May 26 10:07:15 wdp76 kernel: [  668.117347] [akvcam] driver.c(624): 		UserPtr
+May 26 10:07:15 wdp76 kernel: [  668.117347] [akvcam] driver.c(627): 	User Controls: No
+May 26 10:07:15 wdp76 kernel: [  668.117347] [akvcam] driver.c(653): 	Formats:
+May 26 10:07:15 wdp76 kernel: [  668.117348] [akvcam] driver.c(662): 		RGB24 640x480 30/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117349] [akvcam] driver.c(662): 		RGB24 640x480 15/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117349] [akvcam] driver.c(662): 		RGB24 640x480 15/2 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117350] [akvcam] driver.c(662): 		RGB24 960x720 30/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117350] [akvcam] driver.c(662): 		RGB24 960x720 15/1 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117351] [akvcam] driver.c(662): 		RGB24 960x720 15/2 Hz
+May 26 10:07:15 wdp76 kernel: [  668.117351] [akvcam] driver.c(680): 	Connections:
+May 26 10:07:15 wdp76 kernel: [  668.117351] [akvcam] driver.c(688): 		/dev/video2
+May 26 10:07:15 wdp76 kernel: [  668.117352] [akvcam] driver.c(634): 
+May 26 10:07:15 wdp76 kernel: [  668.118675] [akvcam] node.c(134): akvcam_node_open()
+May 26 10:07:15 wdp76 kernel: [  668.118681] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+May 26 10:07:15 wdp76 kernel: [  668.118718] [akvcam] node.c(281): akvcam_node_release()
+May 26 10:07:15 wdp76 kernel: [  668.118958] [akvcam] node.c(134): akvcam_node_open()
+May 26 10:07:15 wdp76 kernel: [  668.118962] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+May 26 10:07:15 wdp76 kernel: [  668.118996] [akvcam] node.c(281): akvcam_node_release()
+May 26 10:07:18 wdp76 kernel: [  671.076874] [akvcam] node.c(134): akvcam_node_open()
+May 26 10:07:18 wdp76 kernel: [  671.076880] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+May 26 10:07:18 wdp76 kernel: [  671.076882] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+May 26 10:07:18 wdp76 kernel: [  671.076883] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:18 wdp76 kernel: [  671.076884] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:18 wdp76 kernel: [  671.076885] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:18 wdp76 kernel: [  671.076888] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076891] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076892] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076895] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:18 wdp76 kernel: [  671.076897] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076899] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076901] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076902] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076905] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076907] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076909] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076913] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076914] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076915] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076916] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076917] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076918] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076919] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076920] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076921] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076922] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076925] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:18 wdp76 kernel: [  671.076928] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:18 wdp76 kernel: [  671.076929] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076931] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076932] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076933] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076935] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076937] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076938] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076939] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076940] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076941] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076942] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076943] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076944] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076945] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076946] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076947] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076948] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076950] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:18 wdp76 kernel: [  671.076952] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076953] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076954] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076956] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.076957] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076958] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076960] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076961] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076962] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076963] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076964] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076965] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076966] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076967] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076968] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076969] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076970] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.076972] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:18 wdp76 kernel: [  671.076986] [akvcam] node.c(281): akvcam_node_release()
+May 26 10:07:18 wdp76 kernel: [  671.077028] [akvcam] node.c(134): akvcam_node_open()
+May 26 10:07:18 wdp76 kernel: [  671.077030] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+May 26 10:07:18 wdp76 kernel: [  671.077032] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+May 26 10:07:18 wdp76 kernel: [  671.077033] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+May 26 10:07:18 wdp76 kernel: [  671.077035] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:18 wdp76 kernel: [  671.077035] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:18 wdp76 kernel: [  671.077036] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:18 wdp76 kernel: [  671.077039] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.077041] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+May 26 10:07:18 wdp76 kernel: [  671.077043] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:18 wdp76 kernel: [  671.077044] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.077046] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.077048] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.077049] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.077051] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:18 wdp76 kernel: [  671.077052] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.077054] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.077055] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.077056] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:18 wdp76 kernel: [  671.077058] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:18 wdp76 kernel: [  671.077070] [akvcam] node.c(281): akvcam_node_release()
+May 26 10:07:24 wdp76 kernel: [  676.604368] [akvcam] node.c(134): akvcam_node_open()
+May 26 10:07:24 wdp76 kernel: [  676.604375] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+May 26 10:07:24 wdp76 kernel: [  676.604378] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+May 26 10:07:24 wdp76 kernel: [  676.604379] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+May 26 10:07:24 wdp76 kernel: [  676.604381] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:24 wdp76 kernel: [  676.604382] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:24 wdp76 kernel: [  676.604383] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+May 26 10:07:24 wdp76 kernel: [  676.604385] [akvcam] ioctl.c(446): akvcam_ioctls_g_input()
+May 26 10:07:24 wdp76 kernel: [  676.604401] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+May 26 10:07:24 wdp76 kernel: [  676.604405] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+May 26 10:07:24 wdp76 kernel: [  676.604408] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:24 wdp76 kernel: [  676.604410] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:24 wdp76 kernel: [  676.604412] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:24 wdp76 kernel: [  676.604414] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:24 wdp76 kernel: [  676.604415] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:24 wdp76 kernel: [  676.604418] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:24 wdp76 kernel: [  676.604419] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:24 wdp76 kernel: [  676.604420] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:24 wdp76 kernel: [  676.604422] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:24 wdp76 kernel: [  676.604423] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+May 26 10:07:24 wdp76 kernel: [  676.604425] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+May 26 10:07:24 wdp76 kernel: [  676.611650] [akvcam] ioctl.c(609): akvcam_ioctls_s_fmt()
+May 26 10:07:24 wdp76 kernel: [  676.611651] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+May 26 10:07:24 wdp76 kernel: [  676.612155] [akvcam] ioctl.c(690): akvcam_ioctls_g_parm()
+May 26 10:07:24 wdp76 kernel: [  676.612157] [akvcam] ioctl.c(734): akvcam_ioctls_s_parm()
+May 26 10:07:24 wdp76 kernel: [  676.612161] [akvcam] ioctl.c(395): akvcam_ioctls_g_ctrl()
+May 26 10:07:24 wdp76 kernel: [  676.612186] [akvcam] ioctl.c(961): akvcam_ioctls_reqbufs()
+May 26 10:07:24 wdp76 kernel: [  676.612188] [akvcam] ioctl.c(1030): akvcam_ioctl_create_bufs()
+May 26 10:07:24 wdp76 kernel: [  676.612189] [akvcam] ioctl.c(961): akvcam_ioctls_reqbufs()
+May 26 10:07:24 wdp76 kernel: [  676.612190] [akvcam] ioctl.c(1030): akvcam_ioctl_create_bufs()
+May 26 10:07:24 wdp76 kernel: [  676.612191] [akvcam] ioctl.c(961): akvcam_ioctls_reqbufs()
+May 26 10:07:24 wdp76 kernel: [  676.636863] [akvcam] ioctl.c(395): akvcam_ioctls_g_ctrl()
+May 26 10:07:24 wdp76 kernel: [  676.636881] [akvcam] ioctl.c(961): akvcam_ioctls_reqbufs()
+May 26 10:07:24 wdp76 kernel: [  676.637341] [akvcam] ioctl.c(977): akvcam_ioctls_querybuf()
+May 26 10:07:24 wdp76 kernel: [  676.637343] [akvcam] ioctl.c(977): akvcam_ioctls_querybuf()
+May 26 10:07:24 wdp76 kernel: [  676.637344] [akvcam] ioctl.c(977): akvcam_ioctls_querybuf()
+May 26 10:07:24 wdp76 kernel: [  676.637345] [akvcam] ioctl.c(977): akvcam_ioctls_querybuf()
+May 26 10:07:24 wdp76 kernel: [  676.637353] [akvcam] node.c(269): akvcam_node_mmap()
+May 26 10:07:24 wdp76 kernel: [  676.637380] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.637383] [akvcam] node.c(269): akvcam_node_mmap()
+May 26 10:07:24 wdp76 kernel: [  676.637406] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.637408] [akvcam] node.c(269): akvcam_node_mmap()
+May 26 10:07:24 wdp76 kernel: [  676.637431] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.637432] [akvcam] node.c(269): akvcam_node_mmap()
+May 26 10:07:24 wdp76 kernel: [  676.637455] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.637460] [akvcam] ioctl.c(1162): akvcam_ioctl_streamon()
+May 26 10:07:24 wdp76 kernel: [  676.637605] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.637753] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.647464] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.647467] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.681457] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.681533] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.681537] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.682816] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.724603] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.724606] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.724846] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.725826] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.733648] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.733650] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.768765] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.776648] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.776651] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.810021] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.812838] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.821045] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.821048] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.854453] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.855839] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.864003] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.864005] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.897429] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.898791] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.906552] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.906555] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.939957] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.940739] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.948602] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.948605] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  676.982021] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  676.983824] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  676.991750] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  676.991752] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  677.025176] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  677.026831] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  677.034856] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  677.034859] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  677.068280] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  677.069796] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  677.077695] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  677.077697] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  677.111083] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  677.112829] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  677.120576] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  677.120579] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  677.154008] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  677.155805] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  677.163456] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  677.163458] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  677.196865] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  677.197694] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  677.205698] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  677.205700] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  677.239096] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  677.241818] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:24 wdp76 kernel: [  677.249800] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:24 wdp76 kernel: [  677.249803] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:24 wdp76 kernel: [  677.283216] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:24 wdp76 kernel: [  677.284687] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.292460] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.292462] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.325824] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.327690] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.335618] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.335621] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.369001] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.370805] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.378866] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.378869] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.412285] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.413806] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.421687] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.421691] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.455096] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.456806] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.464657] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.464660] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.498077] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.500719] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.508989] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.508992] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.542406] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.543702] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.551649] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.551652] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.585039] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.586840] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.594969] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.594972] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.628389] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.629821] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.637790] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.637793] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.671124] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.673732] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.681578] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.681581] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.714984] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.715747] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.723916] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.723919] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.757332] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.758823] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.766785] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.766788] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.800142] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.801715] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.809847] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.809850] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.843301] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.844838] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.852899] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.852902] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.886238] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.887705] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.896676] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.896679] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.929424] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.931844] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.939965] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.939968] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  677.973399] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  677.974809] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  677.982768] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  677.982771] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  678.016191] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  678.017779] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  678.025928] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  678.025931] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  678.059273] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  678.060760] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  678.068952] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  678.068955] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  678.102369] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  678.104830] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  678.113066] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  678.113069] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  678.146409] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  678.147747] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  678.155797] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  678.155800] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  678.189236] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  678.190837] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  678.198972] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  678.198975] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  678.232398] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  678.233829] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  678.241827] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  678.241829] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:25 wdp76 kernel: [  678.275249] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:25 wdp76 kernel: [  678.276815] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:25 wdp76 kernel: [  678.284918] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:25 wdp76 kernel: [  678.284921] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.318344] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.319830] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.327513] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.327516] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.360923] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.361746] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.369678] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.369681] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.403018] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.404857] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.412736] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.412739] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.446152] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.447857] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.456004] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.456007] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.489448] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.490860] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.498599] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.498602] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.531939] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.532741] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.540607] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.540610] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.574015] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.574756] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.582532] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.582535] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.615847] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.616818] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.625479] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.625482] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.658817] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.659750] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.668015] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.668018] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.701360] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+May 26 10:07:26 wdp76 kernel: [  678.702768] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.711092] [akvcam] node.c(254): akvcam_node_poll()
+May 26 10:07:26 wdp76 kernel: [  678.711095] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+May 26 10:07:26 wdp76 kernel: [  678.718094] [akvcam] node.c(281): akvcam_node_release()
+May 26 10:07:26 wdp76 kernel: [  678.745817] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.788770] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.831855] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.874852] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.917840] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  678.960840] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  679.003837] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  679.046723] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  679.089841] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  679.132840] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  679.175727] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  679.217832] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:26 wdp76 kernel: [  679.260763] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.303762] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.346876] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.389848] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.432734] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.475844] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.517754] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.559845] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.602829] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.644845] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.687839] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.730722] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.773846] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.816901] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.860867] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.903863] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.945878] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  679.988777] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  680.030863] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  680.073855] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  680.116863] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  680.159854] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  680.202852] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  680.245858] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:27 wdp76 kernel: [  680.288861] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.331879] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.374881] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.417865] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.460860] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.503884] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.546890] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.589872] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.632874] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.675881] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.718869] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.761884] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.804867] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.847873] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.889865] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.932894] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  680.974877] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  681.017889] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  681.060912] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  681.104917] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  681.147909] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  681.190892] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  681.232882] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:28 wdp76 kernel: [  681.274891] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.316889] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.359880] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.402878] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.444883] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.487884] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.530892] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.573895] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.616909] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.659888] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.701875] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.743895] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.786874] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.829782] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.872888] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.915902] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  681.958919] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  682.001892] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  682.044911] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  682.087929] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  682.130917] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  682.173914] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  682.215919] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:29 wdp76 kernel: [  682.258921] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.301911] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.344929] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.387928] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.430888] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.473922] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.516919] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.559901] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.602944] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.645930] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.688915] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.730886] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.773931] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.816845] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.858914] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.901904] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.944932] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  682.987945] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  683.030943] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  683.073927] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  683.116964] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  683.159941] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  683.202944] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  683.245947] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:30 wdp76 kernel: [  683.288971] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.331960] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.374959] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.417866] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.460951] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.502966] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.544945] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.587947] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.629932] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.672956] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.715927] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.757944] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.800968] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.843954] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.886853] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.929955] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  683.972948] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  684.015949] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  684.058953] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  684.101944] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  684.144958] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  684.187968] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  684.230916] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:31 wdp76 kernel: [  684.273897] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.316865] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.359875] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.362629] general protection fault: 0000 [#1] PREEMPT SMP PTI
+May 26 10:07:32 wdp76 kernel: [  684.362632] CPU: 11 PID: 11620 Comm: cheese Tainted: P         C OE     5.3.0-53-lowlatency #47~18.04.1-Ubuntu
+May 26 10:07:32 wdp76 kernel: [  684.362632] Hardware name: System76 Wild Dog Pro/Z370 HD3P-CF, BIOS F5 Z5 12/15/2017
+May 26 10:07:32 wdp76 kernel: [  684.362635] RIP: 0010:__kmalloc+0xa1/0x280
+May 26 10:07:32 wdp76 kernel: [  684.362637] Code: 48 89 c8 65 48 03 05 76 a5 76 4f 48 8b 70 08 48 39 f2 75 e7 4c 8b 20 4d 85 e4 0f 84 9f 01 00 00 41 8b 40 20 49 8b 38 4c 01 e0 <48> 8b 18 49 33 98 70 01 00 00 48 89 c1 48 0f c9 4c 89 e0 48 31 cb
+May 26 10:07:32 wdp76 kernel: [  684.362637] RSP: 0018:ffffb9a1c27c3950 EFLAGS: 00010206
+May 26 10:07:32 wdp76 kernel: [  684.362638] RAX: 5cb56868a988a6b1 RBX: 0000000000000000 RCX: 000000000002f120
+May 26 10:07:32 wdp76 kernel: [  684.362639] RDX: 000000000070400b RSI: 000000000070400b RDI: 000000000002f120
+May 26 10:07:32 wdp76 kernel: [  684.362640] RBP: ffffb9a1c27c3980 R08: ffff99f94b406f40 R09: 0000000000000000
+May 26 10:07:32 wdp76 kernel: [  684.362640] R10: ffffffffc0f4f170 R11: 0000000000161000 R12: 5cb56868a988a6b1
+May 26 10:07:32 wdp76 kernel: [  684.362641] R13: 0000000000002cc0 R14: 00000000000000c8 R15: ffff99f94b406f40
+May 26 10:07:32 wdp76 kernel: [  684.362642] FS:  00007f62ee630a80(0000) GS:ffff99f94eac0000(0000) knlGS:0000000000000000
+May 26 10:07:32 wdp76 kernel: [  684.362642] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+May 26 10:07:32 wdp76 kernel: [  684.362643] CR2: 000055f1ad6b90a8 CR3: 00000007192ea002 CR4: 00000000003606e0
+May 26 10:07:32 wdp76 kernel: [  684.362643] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+May 26 10:07:32 wdp76 kernel: [  684.362644] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+May 26 10:07:32 wdp76 kernel: [  684.362644] Call Trace:
+May 26 10:07:32 wdp76 kernel: [  684.362749]  ? os_alloc_mem+0xe2/0xf0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.362839]  os_alloc_mem+0xe2/0xf0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.362950]  _nv008096rm+0x23/0x30 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.362951] WARNING: kernel stack frame pointer at 00000000c7f61549 in cheese:11620 has bad value 00000000c486b00e
+May 26 10:07:32 wdp76 kernel: [  684.362952] unwind stack type:0 next_sp:00000000ae783e54 mask:0x2 graph_idx:0
+May 26 10:07:32 wdp76 kernel: [  684.362953] 000000006db53300: ffffb9a1c27c39a0 (0xffffb9a1c27c39a0)
+May 26 10:07:32 wdp76 kernel: [  684.363020] 000000009966bc4b: ffffffffc0b880b2 (os_alloc_mem+0xe2/0xf0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.363086] 0000000037880ca5: ffffffffc1d84880 (_nv033232rm+0x70/0xffffffffff5bd7f0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.363087] 0000000037929fd3: 00000000000000c0 (0xc0)
+May 26 10:07:32 wdp76 kernel: [  684.363087] 00000000c7f61549: ffff99f8473b5908 (0xffff99f8473b5908)
+May 26 10:07:32 wdp76 kernel: [  684.363196] 000000000067c8d4: ffffffffc1252823 (_nv008096rm+0x23/0x30 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.363306] 00000000d53645a7: ffffffffc12524a0 (_nv008100rm+0x10/0x10 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.363415] 0000000026837739: ffffffffc125213f (_nv008097rm+0x1f/0x70 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.363415] 00000000b438c05d: ffff99f905150008 (0xffff99f905150008)
+May 26 10:07:32 wdp76 kernel: [  684.363416] 000000005cf400af: ffff99f9246987e8 (0xffff99f9246987e8)
+May 26 10:07:32 wdp76 kernel: [  684.363416] 000000008b64b346: ffff99f90506c008 (0xffff99f90506c008)
+May 26 10:07:32 wdp76 kernel: [  684.363573] 0000000094aacddd: ffffffffc103b8f2 (_nv024751rm+0x342/0x2380 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.363573] 000000008a9a0b96: ffff99f9411f8008 (0xffff99f9411f8008)
+May 26 10:07:32 wdp76 kernel: [  684.363574] 00000000e74a16a9: ffff99f9411f8008 (0xffff99f9411f8008)
+May 26 10:07:32 wdp76 kernel: [  684.363574] 000000008c7c221f: ffff99f90506c008 (0xffff99f90506c008)
+May 26 10:07:32 wdp76 kernel: [  684.363574] 000000002e592cc6: ffff99f90522a008 (0xffff99f90522a008)
+May 26 10:07:32 wdp76 kernel: [  684.363575] 00000000b2b68034: 0000000000161000 (0x161000)
+May 26 10:07:32 wdp76 kernel: [  684.363771] 00000000574ba241: ffffffffc1043b96 (_nv007423rm+0x1a6/0x340 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.363771] 00000000c9ca7926: ffff99f9411f8008 (0xffff99f9411f8008)
+May 26 10:07:32 wdp76 kernel: [  684.363771] 000000002bf9ed68: ffff99f9411f8008 (0xffff99f9411f8008)
+May 26 10:07:32 wdp76 kernel: [  684.363772] 00000000fde4b3ea: ffff99f90506c008 (0xffff99f90506c008)
+May 26 10:07:32 wdp76 kernel: [  684.363772] 0000000084e10a9d: ffff99f943410008 (0xffff99f943410008)
+May 26 10:07:32 wdp76 kernel: [  684.363772] 00000000c9776ab8: 0000000000121000 (0x121000)
+May 26 10:07:32 wdp76 kernel: [  684.363930] 000000006bbbb4be: ffffffffc1043e00 (_nv027154rm+0xd0/0x510 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.363930] 000000009ae45391: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.363930] 000000003e4e4927: ffff99f9411f8008 (0xffff99f9411f8008)
+May 26 10:07:32 wdp76 kernel: [  684.364008] 0000000021157f53: ffffffffc1c71e50 (_nv000621rm+0x1f0/0xffffffffff6d03a0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.364008] 00000000e286c606: ffff99f9411fa008 (0xffff99f9411fa008)
+May 26 10:07:32 wdp76 kernel: [  684.364009] 00000000856276db: 0000000000121000 (0x121000)
+May 26 10:07:32 wdp76 kernel: [  684.364165] 00000000b455a82c: ffffffffc104429c (_nv027155rm+0x5c/0x90 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.364165] 000000002005a78f: ffff99f90506c008 (0xffff99f90506c008)
+May 26 10:07:32 wdp76 kernel: [  684.364165] 00000000766fc4e2: ffff99f905200008 (0xffff99f905200008)
+May 26 10:07:32 wdp76 kernel: [  684.364166] 00000000476709ab: ffff99f90515e008 (0xffff99f90515e008)
+May 26 10:07:32 wdp76 kernel: [  684.364324] 00000000a654ba0d: ffffffffc0fe5446 (_nv021630rm+0x1e6/0x3f0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.364324] 00000000397c3679: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.364325] 00000000e313e842: ffff99f90506c008 (0xffff99f90506c008)
+May 26 10:07:32 wdp76 kernel: [  684.364325] 00000000e34aa624: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.364325] 000000002953c968: 0000000000000018 (0x18)
+May 26 10:07:32 wdp76 kernel: [  684.364484] 00000000db7215f1: ffffffffc0fbd2d3 (_nv023123rm+0xce3/0x1170 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.364485] 00000000a85c386b: ffff99f92ed20808 (0xffff99f92ed20808)
+May 26 10:07:32 wdp76 kernel: [  684.364485] 00000000c8c70003: ffff99f8473b5d30 (0xffff99f8473b5d30)
+May 26 10:07:32 wdp76 kernel: [  684.364485] 000000002c6266dc: ffff99f8473b5eb8 (0xffff99f8473b5eb8)
+May 26 10:07:32 wdp76 kernel: [  684.364486] 00000000a75bec3a: ffff99f92ed20810 (0xffff99f92ed20810)
+May 26 10:07:32 wdp76 kernel: [  684.364486] 00000000171f4fcf: ffff99f92ed20830 (0xffff99f92ed20830)
+May 26 10:07:32 wdp76 kernel: [  684.364589] 000000003ec29b0f: ffffffffc1275d7e (_nv003450rm+0x4e/0x70 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.364698] 0000000051eb5252: ffffffffc12524a0 (_nv008100rm+0x10/0x10 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.364699] 00000000e5f2eee0: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.364699] 0000000045bf1ef0: ffff99f8473b5ce0 (0xffff99f8473b5ce0)
+May 26 10:07:32 wdp76 kernel: [  684.364812] 000000008ba01485: ffffffffc1c998e0 (_nv003689rm+0x190/0xffffffffff6a88b0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.364812] 00000000976f40a2: ffff99f92ed20808 (0xffff99f92ed20808)
+May 26 10:07:32 wdp76 kernel: [  684.364920] 0000000042263e2b: ffffffffc1259036 (_nv004218rm+0xe6/0x190 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.364921] 000000006e3f638d: 0000000000000022 (0x22)
+May 26 10:07:32 wdp76 kernel: [  684.364921] 00000000cae70bf2: ffff99f8473b5eb8 (0xffff99f8473b5eb8)
+May 26 10:07:32 wdp76 kernel: [  684.364921] 00000000d5bd6d79: ffff99f8473b5d30 (0xffff99f8473b5d30)
+May 26 10:07:32 wdp76 kernel: [  684.364922] 00000000fda1a2e4: ffff99f8473b5d10 (0xffff99f8473b5d10)
+May 26 10:07:32 wdp76 kernel: [  684.364922] 00000000fa9c19bf: ffff99f8d1f06630 (0xffff99f8d1f06630)
+May 26 10:07:32 wdp76 kernel: [  684.365032] 00000000e231b8f6: ffffffffc0c44b18 (_nv034031rm+0x48/0x90 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365032] 00000000f20671e9: ffff99f8457a2c10 (0xffff99f8457a2c10)
+May 26 10:07:32 wdp76 kernel: [  684.365032] 0000000037e31ee8: ffff99f942a79548 (0xffff99f942a79548)
+May 26 10:07:32 wdp76 kernel: [  684.365033] 00000000d3dae5a9: ffff99f8473b5eb8 (0xffff99f8473b5eb8)
+May 26 10:07:32 wdp76 kernel: [  684.365099] 00000000c864a8ac: ffffffffc1d72b00 (_nv000474rm+0x1c/0xffffffffff5cf51c [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365099] 000000003a93fa70: ffff99f8457a2c10 (0xffff99f8457a2c10)
+May 26 10:07:32 wdp76 kernel: [  684.365208] 0000000032b37d6e: ffffffffc12559ff (_nv006346rm+0x1ff/0x3d0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365209] 00000000146e96d3: ffff99f8473b5e90 (0xffff99f8473b5e90)
+May 26 10:07:32 wdp76 kernel: [  684.365277] 000000005ba0a9f9: ffffffffc1d29a50 (_nv001007rm+0x2408/0xffffffffff61a9b8 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365278] 0000000015be5393: ffff99f8457a2c10 (0xffff99f8457a2c10)
+May 26 10:07:32 wdp76 kernel: [  684.365278] 000000001a270cfa: ffff99f8473b5eb8 (0xffff99f8473b5eb8)
+May 26 10:07:32 wdp76 kernel: [  684.365278] 0000000067a6b8e6: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.365388] 00000000eeb41936: ffffffffc0c44211 (_nv035360rm+0x3a1/0x610 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365388] 00000000894cec0a: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.365454] 00000000932378d0: ffffffffc1d72b00 (_nv000474rm+0x1c/0xffffffffff5cf51c [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365455] 00000000da65c102: ffff99f8473b5e90 (0xffff99f8473b5e90)
+May 26 10:07:32 wdp76 kernel: [  684.365455] 000000005fb15452: 0000000000000001 (0x1)
+May 26 10:07:32 wdp76 kernel: [  684.365455] 00000000e8cc8e17: ffff99f8473b5eb8 (0xffff99f8473b5eb8)
+May 26 10:07:32 wdp76 kernel: [  684.365563] 0000000011e58c16: ffffffffc1253cc4 (_nv035359rm+0x154/0x230 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365629] 00000000f9c60254: ffffffffc1d72b60 (_nv019598rm+0x1f/0xffffffffff5cf4bf [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365630] 000000004579311a: 000000000000902d (0x902d)
+May 26 10:07:32 wdp76 kernel: [  684.365630] 00000000dd15b6a1: ffff99f8eebdaac8 (0xffff99f8eebdaac8)
+May 26 10:07:32 wdp76 kernel: [  684.365631] 000000005c549e7e: 00000000c1d00333 (0xc1d00333)
+May 26 10:07:32 wdp76 kernel: [  684.365631] 00000000b3bdb378: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.365778] 000000007d091787: ffffffffc0c4486e (_nv034143rm+0x16e/0x2d0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365847] 00000000c9d6399a: ffffffffc1d72b60 (_nv019598rm+0x1f/0xffffffffff5cf4bf [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365848] 000000003fbd79e3: 00000000c1d00333 (0xc1d00333)
+May 26 10:07:32 wdp76 kernel: [  684.365848] 000000007ea4f5ae: 00000000beef0100 (0xbeef0100)
+May 26 10:07:32 wdp76 kernel: [  684.365848] 00000000e035319d: ffff99f8eebdaac8 (0xffff99f8eebdaac8)
+May 26 10:07:32 wdp76 kernel: [  684.365849] 00000000160aa4af: 000000000000002b (0x2b)
+May 26 10:07:32 wdp76 kernel: [  684.365958] 00000000cc04654d: ffffffffc0c44bcb (_nv034144rm+0x5b/0x90 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.365958] 00000000735a109b: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.365959] 00000000e75e261d: ffff99f8473b5fc8 (0xffff99f8473b5fc8)
+May 26 10:07:32 wdp76 kernel: [  684.365959] 000000005b68954c: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366068] 000000000d9b05e4: ffffffffc0c44ba1 (_nv034144rm+0x31/0x90 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366069] 00000000b970f55c: ffffffffb06a841b (ns_capable_common+0x2b/0x50)
+May 26 10:07:32 wdp76 kernel: [  684.366070] 00000000b819bc74: ffff99f8eebdaac0 (0xffff99f8eebdaac0)
+May 26 10:07:32 wdp76 kernel: [  684.366070] 0000000011e068d5: 0000000000000001 (0x1)
+May 26 10:07:32 wdp76 kernel: [  684.366070] 00000000fe569536: ffff99f8eebdaac0 (0xffff99f8eebdaac0)
+May 26 10:07:32 wdp76 kernel: [  684.366071] 000000002ab46604: ffff99f869c88400 (0xffff99f869c88400)
+May 26 10:07:32 wdp76 kernel: [  684.366181] 000000002dd22a51: ffffffffc0c50c1e (_nv007467rm+0x5e/0xa0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366181] 0000000032da22ca: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366182] 00000000170aeeed: ffff99f8473b5fc8 (0xffff99f8473b5fc8)
+May 26 10:07:32 wdp76 kernel: [  684.366182] 000000008e306ab4: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366292] 00000000008d063b: ffffffffc0c50c39 (_nv007467rm+0x79/0xa0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366360] 00000000b52ee106: ffffffffc0b88fd2 (os_acquire_spinlock+0x12/0x20 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366360] 000000004d4910b8: ffff99f8473b3008 (0xffff99f8473b3008)
+May 26 10:07:32 wdp76 kernel: [  684.366427] 00000000f002e6cf: ffffffffc1d70fe0 (nv_ctl_waitqueue+0x20/0xffffffffff5d1040 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366517] 00000000d42cb885: ffffffffc12ccc3e (_nv000909rm+0x46e/0x940 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366517] 000000002c38db87: ffff99f8473b5ff8 (0xffff99f8473b5ff8)
+May 26 10:07:32 wdp76 kernel: [  684.366518] 000000009f6149b1: ffff99f8473b3008 (0xffff99f8473b3008)
+May 26 10:07:32 wdp76 kernel: [  684.366584] 0000000094fae2ec: ffffffffc1d70fe0 (nv_ctl_waitqueue+0x20/0xffffffffff5d1040 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366585] 000000003c655736: ffffb9a1c27c3e40 (0xffffb9a1c27c3e40)
+May 26 10:07:32 wdp76 kernel: [  684.366585] 00000000ac43b2f1: ffff99f869c88400 (0xffff99f869c88400)
+May 26 10:07:32 wdp76 kernel: [  684.366673] 000000008a5c0931: ffffffffc12d7424 (rm_ioctl+0x54/0xb0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366673] 000000002544d3bd: 00000020c27c3d10 (0x20c27c3d10)
+May 26 10:07:32 wdp76 kernel: [  684.366673] 00000000eb9a4545: ffff99f8eebdaac0 (0xffff99f8eebdaac0)
+May 26 10:07:32 wdp76 kernel: [  684.366674] 000000005521f95a: ffffb9a1c27c3d20 (0xffffb9a1c27c3d20)
+May 26 10:07:32 wdp76 kernel: [  684.366674] 00000000f7d38895: 0000000000002d64 (0x2d64)
+May 26 10:07:32 wdp76 kernel: [  684.366674] 000000008db3fd9e: ffffffff0004e254 (0xffffffff0004e254)
+May 26 10:07:32 wdp76 kernel: [  684.366675] 0000000033d75480: 000f4299641224c0 (0xf4299641224c0)
+May 26 10:07:32 wdp76 kernel: [  684.366675] 000000002ca7ba7e: 000f429a527d4cc0 (0xf429a527d4cc0)
+May 26 10:07:32 wdp76 kernel: [  684.366676] 00000000b80e3db8: 000f429a527d4cc0 (0xf429a527d4cc0)
+May 26 10:07:32 wdp76 kernel: [  684.366676] 000000004141fe8b: 000f4299db47b8c0 (0xf4299db47b8c0)
+May 26 10:07:32 wdp76 kernel: [  684.366676] 00000000d2300788: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366676] 000000001578b542: ffffb9a100000000 (0xffffb9a100000000)
+May 26 10:07:32 wdp76 kernel: [  684.366677] 0000000021ab510b: 0000000000000200 (0x200)
+May 26 10:07:32 wdp76 kernel: [  684.366677] 0000000093866a5b: 000000200000000b (0x200000000b)
+May 26 10:07:32 wdp76 kernel: [  684.366678] 0000000004a6dc5b: 0000000000002d64 (0x2d64)
+May 26 10:07:32 wdp76 kernel: [  684.366678] 00000000860e1970: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366678] 00000000003865ec: ffff99f846d85ec8 (0xffff99f846d85ec8)
+May 26 10:07:32 wdp76 kernel: [  684.366678] 00000000ed5ab2be: ffffb9a1c0f6fd70 (0xffffb9a1c0f6fd70)
+May 26 10:07:32 wdp76 kernel: [  684.366679] 00000000922ee5d0: ffffb9a1c27c3d00 (0xffffb9a1c27c3d00)
+May 26 10:07:32 wdp76 kernel: [  684.366680] 00000000c4744fe0: ffffffffb08d0201 (usercopy_abort+0x61/0x80)
+May 26 10:07:32 wdp76 kernel: [  684.366681] 000000004112ab65: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366681] 000000008888dbf4: ffff99f8eebdaac0 (0xffff99f8eebdaac0)
+May 26 10:07:32 wdp76 kernel: [  684.366681] 0000000070c32948: ffff99f869c88400 (0xffff99f869c88400)
+May 26 10:07:32 wdp76 kernel: [  684.366681] 00000000f3ae7810: 0000000000000020 (0x20)
+May 26 10:07:32 wdp76 kernel: [  684.366748] 0000000048cec0a0: ffffffffc1d70fe0 (nv_ctl_waitqueue+0x20/0xffffffffff5d1040 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366814] 00000000959d75c3: ffffffffc0b7ddc9 (nvidia_ioctl+0x179/0x8b0 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366815] 00000000a2fa9fc0: ffff99f8473b3008 (0xffff99f8473b3008)
+May 26 10:07:32 wdp76 kernel: [  684.366815] 000000009880b6ea: 0000002bb086a817 (0x2bb086a817)
+May 26 10:07:32 wdp76 kernel: [  684.366815] 0000000020fb109c: 00007ffd3e354580 (0x7ffd3e354580)
+May 26 10:07:32 wdp76 kernel: [  684.366816] 00000000e0204e13: 0000000000000020 (0x20)
+May 26 10:07:32 wdp76 kernel: [  684.366816] 000000000fcf3dc5: ffff99f869c88438 (0xffff99f869c88438)
+May 26 10:07:32 wdp76 kernel: [  684.366816] 00000000a2221418: ffff99f900000020 (0xffff99f900000020)
+May 26 10:07:32 wdp76 kernel: [  684.366817] 0000000099ea2554: bc7b78caccd0cc00 (0xbc7b78caccd0cc00)
+May 26 10:07:32 wdp76 kernel: [  684.366817] 00000000cf7f8607: ffff99f844a2e000 (0xffff99f844a2e000)
+May 26 10:07:32 wdp76 kernel: [  684.366817] 00000000912c2fc6: bc7b78caccd0cc00 (0xbc7b78caccd0cc00)
+May 26 10:07:32 wdp76 kernel: [  684.366818] 000000006fee0e92: ffff99f927747810 (0xffff99f927747810)
+May 26 10:07:32 wdp76 kernel: [  684.366818] 0000000067954b36: ffff99f84d07e900 (0xffff99f84d07e900)
+May 26 10:07:32 wdp76 kernel: [  684.366818] 000000005dd876df: 00007ffd3e354580 (0x7ffd3e354580)
+May 26 10:07:32 wdp76 kernel: [  684.366819] 000000008813a40f: 00000000c020462b (0xc020462b)
+May 26 10:07:32 wdp76 kernel: [  684.366819] 000000008cada920: 00007ffd3e354580 (0x7ffd3e354580)
+May 26 10:07:32 wdp76 kernel: [  684.366819] 000000006cb69610: ffffb9a1c27c3e50 (0xffffb9a1c27c3e50)
+May 26 10:07:32 wdp76 kernel: [  684.366885] 00000000cec2d0cc: ffffffffc0b7a082 (nvidia_frontend_unlocked_ioctl+0x42/0x50 [nvidia])
+May 26 10:07:32 wdp76 kernel: [  684.366885] 00000000c2e7bb53: ffffb9a1c27c3ed8 (0xffffb9a1c27c3ed8)
+May 26 10:07:32 wdp76 kernel: [  684.366886] 00000000d5811d12: ffffffffb08f01e9 (do_vfs_ioctl+0xa9/0x640)
+May 26 10:07:32 wdp76 kernel: [  684.366886] 000000000ba1f79d: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366887] 000000007885fa7d: 0000000000013000 (0x13000)
+May 26 10:07:32 wdp76 kernel: [  684.366887] 00000000af91746e: 00007f62ee591000 (0x7f62ee591000)
+May 26 10:07:32 wdp76 kernel: [  684.366887] 000000004314140d: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366888] 00000000ec65fdd6: ffff99f84d07e900 (0xffff99f84d07e900)
+May 26 10:07:32 wdp76 kernel: [  684.366888] 0000000096b5ebb6: ffffb9a1c27c3eb8 (0xffffb9a1c27c3eb8)
+May 26 10:07:32 wdp76 kernel: [  684.366889] 00000000a1f04bad: ffffffffb08fcd6a (__fget+0x7a/0xa0)
+May 26 10:07:32 wdp76 kernel: [  684.366889] 00000000ee523c5b: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366889] 00000000928c6f6d: ffffb9a1c27c3f58 (0xffffb9a1c27c3f58)
+May 26 10:07:32 wdp76 kernel: [  684.366890] 00000000bbf77930: bc7b78caccd0cc00 (0xbc7b78caccd0cc00)
+May 26 10:07:32 wdp76 kernel: [  684.366890] 00000000be77255d: ffff99f84d07e901 (0xffff99f84d07e901)
+May 26 10:07:32 wdp76 kernel: [  684.366890] 00000000ad97ffb5: ffff99f84d07e900 (0xffff99f84d07e900)
+May 26 10:07:32 wdp76 kernel: [  684.366891] 00000000b366db46: 000000000000000b (0xb)
+May 26 10:07:32 wdp76 kernel: [  684.366891] 000000007db53856: 00000000c020462b (0xc020462b)
+May 26 10:07:32 wdp76 kernel: [  684.366891] 00000000ea1347d7: 00007ffd3e354580 (0x7ffd3e354580)
+May 26 10:07:32 wdp76 kernel: [  684.366892] 000000005dac598b: ffffb9a1c27c3f18 (0xffffb9a1c27c3f18)
+May 26 10:07:32 wdp76 kernel: [  684.366892] 00000000a504a533: ffffffffb08f07f5 (ksys_ioctl+0x75/0x80)
+May 26 10:07:32 wdp76 kernel: [  684.366892] 00000000860a22fe: 00000000c27c3f18 (0xc27c3f18)
+May 26 10:07:32 wdp76 kernel: [  684.366893] 000000000e7a2f1b: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366893] 0000000062f27a66: ffffb9a1c27c3f58 (0xffffb9a1c27c3f58)
+May 26 10:07:32 wdp76 kernel: [  684.366893] 00000000dcc612e2: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366894] 0000000040c2eb69: ffffb9a1c27c3f28 (0xffffb9a1c27c3f28)
+May 26 10:07:32 wdp76 kernel: [  684.366894] 00000000d4ef8dcb: ffffffffb08f081a (__x64_sys_ioctl+0x1a/0x20)
+May 26 10:07:32 wdp76 kernel: [  684.366894] 00000000aba491d5: ffffb9a1c27c3f48 (0xffffb9a1c27c3f48)
+May 26 10:07:32 wdp76 kernel: [  684.366896] 000000004be98ef6: ffffffffb060450a (do_syscall_64+0x5a/0x130)
+May 26 10:07:32 wdp76 kernel: [  684.366896] 00000000a3460d07: 0000000000000000 ...
+May 26 10:07:32 wdp76 kernel: [  684.366898] 000000004366eb59: ffffffffb120008c (entry_SYSCALL_64_after_hwframe+0x44/0xa9)
+May 26 10:07:32 wdp76 kernel: [  684.366898] 00000000680f9071: 000000000000002b (0x2b)
+May 26 10:07:32 wdp76 kernel: [  684.366898] 00000000df4e63c7: 0000000000000020 (0x20)
+May 26 10:07:32 wdp76 kernel: [  684.366898] 00000000e491a97c: 00000000c020462b (0xc020462b)
+May 26 10:07:32 wdp76 kernel: [  684.366899] 00000000a5c5d858: 00007ffd3e354598 (0x7ffd3e354598)
+May 26 10:07:32 wdp76 kernel: [  684.366899] 00000000a7cd86a3: 00007ffd3e354580 (0x7ffd3e354580)
+May 26 10:07:32 wdp76 kernel: [  684.366899] 00000000c0fa23ac: 000000005ecd4cd4 (0x5ecd4cd4)
+May 26 10:07:32 wdp76 kernel: [  684.366900] 00000000419d0069: 0000000000000246 (0x246)
+May 26 10:07:32 wdp76 kernel: [  684.366900] 0000000012cb4f00: 000000000000003f (0x3f)
+May 26 10:07:32 wdp76 kernel: [  684.366900] 0000000094730594: 00007ffd3e354598 (0x7ffd3e354598)
+May 26 10:07:32 wdp76 kernel: [  684.366901] 000000000a603ebd: 00007ffd3e354580 (0x7ffd3e354580)
+May 26 10:07:32 wdp76 kernel: [  684.366901] 00000000752bc256: ffffffffffffffda (0xffffffffffffffda)
+May 26 10:07:32 wdp76 kernel: [  684.366901] 00000000ada09ee4: 00007f62eb7455d7 (0x7f62eb7455d7)
+May 26 10:07:32 wdp76 kernel: [  684.366902] 0000000059e67422: 00007ffd3e354580 (0x7ffd3e354580)
+May 26 10:07:32 wdp76 kernel: [  684.366902] 00000000dac6f9fa: 00000000c020462b (0xc020462b)
+May 26 10:07:32 wdp76 kernel: [  684.366902] 000000004aacf197: 000000000000000b (0xb)
+May 26 10:07:32 wdp76 kernel: [  684.366903] 00000000cf1adbb4: 0000000000000010 (0x10)
+May 26 10:07:32 wdp76 kernel: [  684.366903] 000000005b98f881: 00007f62eb7455d7 (0x7f62eb7455d7)
+May 26 10:07:32 wdp76 kernel: [  684.366903] 0000000047904464: 0000000000000033 (0x33)
+May 26 10:07:32 wdp76 kernel: [  684.366904] 000000002f0965bb: 0000000000000246 (0x246)
+May 26 10:07:32 wdp76 kernel: [  684.366904] 00000000fad1bc2f: 00007ffd3e3544a8 (0x7ffd3e3544a8)
+May 26 10:07:32 wdp76 kernel: [  684.366904] 00000000b4610610: 000000000000002b (0x2b)
+May 26 10:07:32 wdp76 kernel: [  684.367013]  ? _nv008100rm+0x10/0x10 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.367158]  ? _nv008097rm+0x1f/0x70 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.367315]  ? _nv024751rm+0x342/0x2380 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.367471]  ? _nv007423rm+0x1a6/0x340 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.367628]  ? _nv027154rm+0xd0/0x510 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.367822]  ? _nv027155rm+0x5c/0x90 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.367981]  ? _nv021630rm+0x1e6/0x3f0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.368147]  ? _nv023123rm+0xce3/0x1170 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.368263]  ? _nv003450rm+0x4e/0x70 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.368374]  ? _nv008100rm+0x10/0x10 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.368482]  ? _nv004218rm+0xe6/0x190 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.368592]  ? _nv034031rm+0x48/0x90 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.368701]  ? _nv006346rm+0x1ff/0x3d0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.368842]  ? _nv035360rm+0x3a1/0x610 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.368951]  ? _nv035359rm+0x154/0x230 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369061]  ? _nv034143rm+0x16e/0x2d0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369170]  ? _nv034144rm+0x5b/0x90 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369281]  ? _nv034144rm+0x31/0x90 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369282]  ? ns_capable_common+0x2b/0x50
+May 26 10:07:32 wdp76 kernel: [  684.369392]  ? _nv007467rm+0x5e/0xa0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369503]  ? _nv007467rm+0x79/0xa0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369570]  ? os_acquire_spinlock+0x12/0x20 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369661]  ? _nv000909rm+0x46e/0x940 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369767]  ? rm_ioctl+0x54/0xb0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369769]  ? usercopy_abort+0x61/0x80
+May 26 10:07:32 wdp76 kernel: [  684.369849]  ? nvidia_ioctl+0x179/0x8b0 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369915]  ? nvidia_frontend_unlocked_ioctl+0x42/0x50 [nvidia]
+May 26 10:07:32 wdp76 kernel: [  684.369916]  ? do_vfs_ioctl+0xa9/0x640
+May 26 10:07:32 wdp76 kernel: [  684.369917]  ? __fget+0x7a/0xa0
+May 26 10:07:32 wdp76 kernel: [  684.369918]  ? ksys_ioctl+0x75/0x80
+May 26 10:07:32 wdp76 kernel: [  684.369919]  ? __x64_sys_ioctl+0x1a/0x20
+May 26 10:07:32 wdp76 kernel: [  684.369921]  ? do_syscall_64+0x5a/0x130
+May 26 10:07:32 wdp76 kernel: [  684.369922]  ? entry_SYSCALL_64_after_hwframe+0x44/0xa9
+May 26 10:07:32 wdp76 kernel: [  684.369923] Modules linked in: akvcam(OE) xt_CHECKSUM iptable_mangle xt_MASQUERADE iptable_nat nf_nat xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 libcrc32c ipt_REJECT nf_reject_ipv4 xt_tcpudp bridge stp llc ebtable_filter ebtables ip6table_filter ip6_tables iptable_filter bpfilter typec_displayport aufs overlay binfmt_misc nls_iso8859_1 nvidia_uvm(OE) nvidia_drm(POE) nvidia_modeset(POE) nvidia(POE) intel_rapl_msr mei_hdcp snd_hda_codec_hdmi intel_rapl_common x86_pkg_temp_thermal intel_powerclamp coretemp kvm_intel kvm irqbypass crct10dif_pclmul crc32_pclmul snd_hda_codec_realtek snd_hda_codec_generic ghash_clmulni_intel ledtrig_audio snd_hda_intel snd_intel_dspcfg aesni_intel snd_hda_codec snd_usb_audio aes_x86_64 snd_hda_core snd_usbmidi_lib crypto_simd snd_hwdep cryptd uvcvideo snd_seq_midi glue_helper v4l2_common drm_kms_helper videobuf2_vmalloc videobuf2_memops intel_cstate snd_seq_midi_event intel_rapl_perf snd_rawmidi videobuf2_v4l2 snd_seq drm videobuf2_common videodev
+May 26 10:07:32 wdp76 kernel: [  684.369939]  snd_pcm ipmi_devintf joydev snd_seq_device ipmi_msghandler input_leds mc snd_timer ucsi_ccg fb_sys_fops syscopyarea typec_ucsi typec wmi_bmof snd sysfillrect sysimgblt soundcore mei_me mei ie31200_edac acpi_pad mac_hid sch_fq_codel cuse parport_pc ppdev lp parport binder_linux ashmem_linux(CE) ip_tables x_tables autofs4 hid_logitech_hidpp hid_logitech_dj hid_plantronics hid_generic usbhid hid ahci e1000e libahci i2c_nvidia_gpu wmi video [last unloaded: akvcam]
+May 26 10:07:32 wdp76 kernel: [  684.369961] ---[ end trace 977a3928e4272306 ]---
+May 26 10:07:32 wdp76 kernel: [  684.369962] RIP: 0010:__kmalloc+0xa1/0x280
+May 26 10:07:32 wdp76 kernel: [  684.369964] Code: 48 89 c8 65 48 03 05 76 a5 76 4f 48 8b 70 08 48 39 f2 75 e7 4c 8b 20 4d 85 e4 0f 84 9f 01 00 00 41 8b 40 20 49 8b 38 4c 01 e0 <48> 8b 18 49 33 98 70 01 00 00 48 89 c1 48 0f c9 4c 89 e0 48 31 cb
+May 26 10:07:32 wdp76 kernel: [  684.369964] RSP: 0018:ffffb9a1c27c3950 EFLAGS: 00010206
+May 26 10:07:32 wdp76 kernel: [  684.369965] RAX: 5cb56868a988a6b1 RBX: 0000000000000000 RCX: 000000000002f120
+May 26 10:07:32 wdp76 kernel: [  684.369966] RDX: 000000000070400b RSI: 000000000070400b RDI: 000000000002f120
+May 26 10:07:32 wdp76 kernel: [  684.369966] RBP: ffffb9a1c27c3980 R08: ffff99f94b406f40 R09: 0000000000000000
+May 26 10:07:32 wdp76 kernel: [  684.369967] R10: ffffffffc0f4f170 R11: 0000000000161000 R12: 5cb56868a988a6b1
+May 26 10:07:32 wdp76 kernel: [  684.369967] R13: 0000000000002cc0 R14: 00000000000000c8 R15: ffff99f94b406f40
+May 26 10:07:32 wdp76 kernel: [  684.369968] FS:  00007f62ee630a80(0000) GS:ffff99f94eac0000(0000) knlGS:0000000000000000
+May 26 10:07:32 wdp76 kernel: [  684.369969] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+May 26 10:07:32 wdp76 kernel: [  684.369969] CR2: 000055f1ad6b90a8 CR3: 00000007192ea002 CR4: 00000000003606e0
+May 26 10:07:32 wdp76 kernel: [  684.369970] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+May 26 10:07:32 wdp76 kernel: [  684.369970] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+May 26 10:07:32 wdp76 kernel: [  684.402976] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.445972] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.488993] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.530987] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.572964] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.615987] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.658982] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.701979] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.744941] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.786966] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.829952] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.872963] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.915985] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  684.958964] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  685.001997] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  685.043996] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  685.085962] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  685.128001] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  685.170979] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  685.212990] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:32 wdp76 kernel: [  685.256001] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.298967] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.341986] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.384972] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.426985] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.469989] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.513016] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.556007] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.599027] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.641991] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.685010] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.728033] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.769996] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.811992] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.854006] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.896993] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.940019] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  685.983000] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  686.026025] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  686.069025] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  686.112022] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  686.155030] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  686.199031] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  686.241993] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:33 wdp76 kernel: [  686.285005] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.327021] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.369995] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.412035] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.455026] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.498014] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.541048] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.584023] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.626045] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.668042] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.710040] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.753048] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.796015] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.839034] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.882010] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.925018] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  686.968030] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  687.012061] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  687.055086] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  687.098035] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  687.141051] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  687.183945] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  687.226055] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:34 wdp76 kernel: [  687.269046] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.312053] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.354050] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.396042] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.439070] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.482055] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.525188] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.568052] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.611056] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.654066] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.697081] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.740084] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.783076] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.826076] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.869086] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.912063] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.955078] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  687.998053] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  688.041069] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  688.084085] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  688.127007] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  688.169060] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  688.212037] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:35 wdp76 kernel: [  688.255083] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.298055] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.340076] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.383076] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.425072] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.468075] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.511074] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.554091] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.597111] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.640090] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.682067] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.725095] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.768107] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.810095] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.853108] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.896116] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.939084] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  688.982104] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  689.025086] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  689.068117] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  689.111116] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  689.154072] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  689.196096] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  689.238105] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:36 wdp76 kernel: [  689.281116] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.324113] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.367089] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.409114] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.452104] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.495152] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.538133] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.581107] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.623042] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.665138] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.708107] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.751126] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.793134] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.836124] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.879114] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.922138] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  689.965139] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  690.008142] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  690.050133] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  690.093123] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  690.136133] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  690.179131] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  690.222161] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:37 wdp76 kernel: [  690.265132] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.308132] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.351087] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.394139] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.436142] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.478149] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.520126] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.563129] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.606219] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.649164] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.692151] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.735161] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.777136] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.820167] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.863173] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.906164] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.949191] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  690.992166] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  691.035174] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  691.078179] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  691.120184] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  691.163188] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  691.206185] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:38 wdp76 kernel: [  691.249150] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.292164] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.335163] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.378170] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.421156] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.464182] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.507091] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.550178] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.593186] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.635176] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.678188] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.721202] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.764208] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.807192] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.850191] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.893185] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.936187] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  691.979199] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  692.022191] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  692.065226] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  692.107225] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  692.149231] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  692.192216] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  692.235208] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:39 wdp76 kernel: [  692.278208] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.320183] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.362219] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.405204] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.448239] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.491217] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.534238] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.577211] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.619222] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.662231] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.704223] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.747211] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.790246] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.833238] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.876275] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.919222] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  692.962234] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  693.005227] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  693.048234] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  693.091247] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  693.134258] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  693.177254] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  693.220248] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:40 wdp76 kernel: [  693.263249] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.305268] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.348243] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.390286] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.433245] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.476257] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.519249] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.562252] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.605246] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.648247] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.691275] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.734249] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.777277] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.820266] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.863260] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.905249] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.948270] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  693.991279] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  694.034276] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  694.077271] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  694.120278] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  694.163288] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  694.207255] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:41 wdp76 kernel: [  694.250305] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.293278] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.336283] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.378292] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.420303] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.463288] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.506291] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.549302] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.592282] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.635296] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.678299] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.721213] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.764296] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.806297] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.848311] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.890313] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.933296] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  694.976310] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  695.019314] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  695.062322] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  695.105311] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  695.148328] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  695.191306] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  695.233308] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:42 wdp76 kernel: [  695.276298] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.318378] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.361331] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.404323] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.447322] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.490348] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.533327] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.576314] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.619340] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.662343] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.705305] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.747334] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.790333] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.833336] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.876316] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.919331] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  695.962333] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  696.005340] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  696.048363] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  696.091357] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  696.133364] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  696.176368] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  696.219372] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:43 wdp76 kernel: [  696.262345] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.305332] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.348367] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.391357] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.434359] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.477397] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.520389] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.563298] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.607376] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.650359] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.693360] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.735374] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.778388] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.821374] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.864393] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.907375] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.949383] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  696.992379] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  697.034386] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  697.077391] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  697.120414] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  697.163391] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  697.206324] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:44 wdp76 kernel: [  697.248369] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.290381] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.333375] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.376330] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.419393] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.462400] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.505384] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.547428] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.590416] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.633407] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.676434] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.719427] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.762387] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.805423] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.848429] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.891415] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.933413] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  697.976343] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  698.018413] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  698.061406] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  698.104429] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  698.147431] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  698.190426] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  698.233411] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:45 wdp76 kernel: [  698.275427] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.317424] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.359430] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.402336] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.445428] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.488440] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.531431] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.575200] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.618399] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.661455] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.703459] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.745448] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.788477] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.831476] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.874456] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.917469] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  698.960458] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  699.003460] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  699.046456] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  699.088461] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  699.130497] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  699.173455] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  699.216466] [akvcam] frame.c(394): Bitmap file name not valid
+May 26 10:07:46 wdp76 kernel: [  699.259365] [akvcam] frame.c(394): Bitmap file name not valid
+
