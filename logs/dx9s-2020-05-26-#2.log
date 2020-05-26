@@ -1,0 +1,557 @@
+dx@wdp76:~/git/akvcam/src$ make clean
+make -C /lib/modules/4.15.0-101-lowlatency/build M=/home/dx/git/akvcam/src clean
+make[1]: Entering directory '/usr/src/linux-headers-4.15.0-101-lowlatency'
+  CLEAN   /home/dx/git/akvcam/src/.tmp_versions
+  CLEAN   /home/dx/git/akvcam/src/Module.symvers
+make[1]: Leaving directory '/usr/src/linux-headers-4.15.0-101-lowlatency'
+dx@wdp76:~/git/akvcam/src$ clear
+
+dx@wdp76:~/git/akvcam/src$ make all
+make -C /lib/modules/4.15.0-101-lowlatency/build M=/home/dx/git/akvcam/src  modules
+make[1]: Entering directory '/usr/src/linux-headers-4.15.0-101-lowlatency'
+  CC [M]  /home/dx/git/akvcam/src/module.o
+  CC [M]  /home/dx/git/akvcam/src/attributes.o
+  CC [M]  /home/dx/git/akvcam/src/buffer.o
+  CC [M]  /home/dx/git/akvcam/src/buffers.o
+  CC [M]  /home/dx/git/akvcam/src/controls.o
+  CC [M]  /home/dx/git/akvcam/src/device.o
+  CC [M]  /home/dx/git/akvcam/src/driver.o
+  CC [M]  /home/dx/git/akvcam/src/events.o
+  CC [M]  /home/dx/git/akvcam/src/file_read.o
+  CC [M]  /home/dx/git/akvcam/src/format.o
+  CC [M]  /home/dx/git/akvcam/src/frame.o
+  CC [M]  /home/dx/git/akvcam/src/global_deleter.o
+  CC [M]  /home/dx/git/akvcam/src/ioctl.o
+  CC [M]  /home/dx/git/akvcam/src/list.o
+  CC [M]  /home/dx/git/akvcam/src/log.o
+  CC [M]  /home/dx/git/akvcam/src/map.o
+  CC [M]  /home/dx/git/akvcam/src/mmap.o
+  CC [M]  /home/dx/git/akvcam/src/node.o
+  CC [M]  /home/dx/git/akvcam/src/object.o
+  CC [M]  /home/dx/git/akvcam/src/rbuffer.o
+  CC [M]  /home/dx/git/akvcam/src/settings.o
+  CC [M]  /home/dx/git/akvcam/src/utils.o
+  LD [M]  /home/dx/git/akvcam/src/akvcam.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/dx/git/akvcam/src/akvcam.mod.o
+  LD [M]  /home/dx/git/akvcam/src/akvcam.ko
+make[1]: Leaving directory '/usr/src/linux-headers-4.15.0-101-lowlatency'
+dx@wdp76:~/git/akvcam/src$ sudo insmod akvcam.ko loglevel=7
+[sudo] password for dx: 
+dx@wdp76:~/git/akvcam/src$ cheese
+
+(cheese:18461): Gtk-WARNING **: 10:45:38.539: Theme parsing error: cheese.css:7:35: The style property GtkScrollbar:min-slider-length is deprecated and shouldn't be used anymore. It will be removed in a future version
+Gtk-Message: 10:45:43.570: GtkDialog mapped without a transient parent. This is discouraged.
+dx@wdp76:~/git/akvcam/src$ dmesg
+[    0.000000] microcode: microcode updated early to revision 0xca, date = 2019-10-03
+[...]
+[ 1875.255343] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1875.255983] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1875.256333] [akvcam] driver.c(596): Virtual Devices:
+[ 1875.256334] [akvcam] driver.c(597): 
+[ 1875.256334] [akvcam] driver.c(605): Device: /dev/video1
+[ 1875.256335] [akvcam] driver.c(606): 	Description: VCam1(4:3/720p)
+[ 1875.256335] [akvcam] driver.c(609): 	Type: Output
+[ 1875.256335] [akvcam] driver.c(614): 	Modes:
+[ 1875.256335] [akvcam] driver.c(618): 		ReadWrite
+[ 1875.256336] [akvcam] driver.c(621): 		MMap
+[ 1875.256336] [akvcam] driver.c(624): 		UserPtr
+[ 1875.256336] [akvcam] driver.c(627): 	User Controls: No
+[ 1875.256337] [akvcam] driver.c(653): 	Formats:
+[ 1875.256338] [akvcam] driver.c(662): 		RGB24 960x720 30/1 Hz
+[ 1875.256338] [akvcam] driver.c(662): 		RGB24 960x720 15/1 Hz
+[ 1875.256339] [akvcam] driver.c(662): 		RGB24 960x720 15/2 Hz
+[ 1875.256339] [akvcam] driver.c(662): 		YUY2 960x720 30/1 Hz
+[ 1875.256340] [akvcam] driver.c(662): 		YUY2 960x720 15/1 Hz
+[ 1875.256341] [akvcam] driver.c(662): 		YUY2 960x720 15/2 Hz
+[ 1875.256341] [akvcam] driver.c(662): 		RGB24 640x480 30/1 Hz
+[ 1875.256342] [akvcam] driver.c(662): 		RGB24 640x480 15/1 Hz
+[ 1875.256342] [akvcam] driver.c(662): 		RGB24 640x480 15/2 Hz
+[ 1875.256343] [akvcam] driver.c(680): 	Connections:
+[ 1875.256343] [akvcam] driver.c(688): 		/dev/video2
+[ 1875.256343] [akvcam] driver.c(634): 
+[ 1875.256344] [akvcam] driver.c(605): Device: /dev/video2
+[ 1875.256344] [akvcam] driver.c(606): 	Description: VCam1(4:3/480p/720p)
+[ 1875.256344] [akvcam] driver.c(611): 	Type: Capture
+[ 1875.256345] [akvcam] driver.c(614): 	Modes:
+[ 1875.256345] [akvcam] driver.c(618): 		ReadWrite
+[ 1875.256345] [akvcam] driver.c(621): 		MMap
+[ 1875.256345] [akvcam] driver.c(624): 		UserPtr
+[ 1875.256346] [akvcam] driver.c(627): 	User Controls: No
+[ 1875.256346] [akvcam] driver.c(653): 	Formats:
+[ 1875.256347] [akvcam] driver.c(662): 		RGB24 640x480 30/1 Hz
+[ 1875.256347] [akvcam] driver.c(662): 		RGB24 640x480 15/1 Hz
+[ 1875.256348] [akvcam] driver.c(662): 		RGB24 640x480 15/2 Hz
+[ 1875.256348] [akvcam] driver.c(662): 		RGB24 960x720 30/1 Hz
+[ 1875.256349] [akvcam] driver.c(662): 		RGB24 960x720 15/1 Hz
+[ 1875.256349] [akvcam] driver.c(662): 		RGB24 960x720 15/2 Hz
+[ 1875.256350] [akvcam] driver.c(680): 	Connections:
+[ 1875.256350] [akvcam] driver.c(688): 		/dev/video1
+[ 1875.256350] [akvcam] driver.c(634): 
+[ 1875.257556] [akvcam] node.c(134): akvcam_node_open()
+[ 1875.257561] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+[ 1875.257598] [akvcam] node.c(281): akvcam_node_release()
+[ 1875.257713] [akvcam] node.c(134): akvcam_node_open()
+[ 1875.257719] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+[ 1875.257756] [akvcam] node.c(281): akvcam_node_release()
+[ 1878.171977] [akvcam] node.c(134): akvcam_node_open()
+[ 1878.171983] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+[ 1878.171985] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+[ 1878.171986] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1878.171987] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1878.171988] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1878.171991] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+[ 1878.171994] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+[ 1878.171995] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+[ 1878.171998] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1878.172000] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172002] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172003] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172005] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172007] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172009] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172011] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172017] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172018] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172019] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172021] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172022] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172023] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172024] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172025] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172026] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172027] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172029] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1878.172032] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1878.172034] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172035] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172037] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172038] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172040] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172041] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172043] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172044] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172045] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172046] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172047] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172048] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172049] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172050] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172051] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172052] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172053] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172055] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1878.172056] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172058] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172059] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172060] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172062] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172063] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172065] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172066] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172067] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172068] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172069] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172070] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172071] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172072] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172073] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172074] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172075] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1878.172077] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1878.172092] [akvcam] node.c(281): akvcam_node_release()
+[ 1878.172132] [akvcam] node.c(134): akvcam_node_open()
+[ 1878.172135] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+[ 1878.172136] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+[ 1878.172137] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+[ 1878.172139] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1878.172140] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1878.172141] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1878.172143] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+[ 1878.172145] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+[ 1878.172148] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1878.172149] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172151] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172152] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172153] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172156] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1878.172157] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172158] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172159] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172161] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1878.172163] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1878.172176] [akvcam] node.c(281): akvcam_node_release()
+[ 1884.865080] [akvcam] node.c(134): akvcam_node_open()
+[ 1884.865087] [akvcam] ioctl.c(270): akvcam_ioctls_querycap()
+[ 1884.865089] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+[ 1884.865091] [akvcam] ioctl.c(426): akvcam_ioctls_enuminput()
+[ 1884.865092] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1884.865093] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1884.865094] [akvcam] ioctl.c(363): akvcam_ioctls_queryctrl()
+[ 1884.865096] [akvcam] ioctl.c(446): akvcam_ioctls_g_input()
+[ 1884.865112] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+[ 1884.865115] [akvcam] ioctl.c(534): akvcam_ioctls_enum_fmt()
+[ 1884.865119] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1884.865120] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1884.865122] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1884.865124] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1884.865125] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1884.865128] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1884.865129] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1884.865130] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1884.865132] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1884.865133] [akvcam] ioctl.c(836): akvcam_ioctls_enum_frameintervals()
+[ 1884.865135] [akvcam] ioctl.c(809): akvcam_ioctls_enum_framesizes()
+[ 1884.871924] [akvcam] ioctl.c(609): akvcam_ioctls_s_fmt()
+[ 1884.871925] [akvcam] ioctl.c(637): akvcam_ioctls_try_fmt()
+[ 1884.872561] [akvcam] ioctl.c(690): akvcam_ioctls_g_parm()
+[ 1884.872562] [akvcam] ioctl.c(734): akvcam_ioctls_s_parm()
+[ 1884.872566] [akvcam] ioctl.c(395): akvcam_ioctls_g_ctrl()
+[ 1884.872592] [akvcam] ioctl.c(961): akvcam_ioctls_reqbufs()
+[ 1884.872594] [akvcam] ioctl.c(1030): akvcam_ioctl_create_bufs()
+[ 1884.872595] [akvcam] ioctl.c(961): akvcam_ioctls_reqbufs()
+[ 1884.872596] [akvcam] ioctl.c(1030): akvcam_ioctl_create_bufs()
+[ 1884.872597] [akvcam] ioctl.c(961): akvcam_ioctls_reqbufs()
+[ 1884.896442] [akvcam] ioctl.c(395): akvcam_ioctls_g_ctrl()
+[ 1884.896457] [akvcam] ioctl.c(961): akvcam_ioctls_reqbufs()
+[ 1884.896979] [akvcam] ioctl.c(977): akvcam_ioctls_querybuf()
+[ 1884.896982] [akvcam] ioctl.c(977): akvcam_ioctls_querybuf()
+[ 1884.896983] [akvcam] ioctl.c(977): akvcam_ioctls_querybuf()
+[ 1884.896984] [akvcam] ioctl.c(977): akvcam_ioctls_querybuf()
+[ 1884.897007] [akvcam] node.c(269): akvcam_node_mmap()
+[ 1884.897049] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1884.897052] [akvcam] node.c(269): akvcam_node_mmap()
+[ 1884.897074] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1884.897076] [akvcam] node.c(269): akvcam_node_mmap()
+[ 1884.897099] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1884.897101] [akvcam] node.c(269): akvcam_node_mmap()
+[ 1884.897137] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1884.897143] [akvcam] ioctl.c(1162): akvcam_ioctl_streamon()
+[ 1884.897230] [akvcam] node.c(254): akvcam_node_poll()
+[ 1884.897422] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1884.907763] [akvcam] node.c(254): akvcam_node_poll()
+[ 1884.907767] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1884.941859] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1884.941941] [akvcam] node.c(254): akvcam_node_poll()
+[ 1884.941946] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1884.942133] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1884.983740] [akvcam] node.c(254): akvcam_node_poll()
+[ 1884.983744] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1884.984021] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1884.985229] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1884.993077] [akvcam] node.c(254): akvcam_node_poll()
+[ 1884.993079] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.028197] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.036104] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.036107] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.069520] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.071296] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.079318] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.079321] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.112604] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.114232] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.122023] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.122025] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.155431] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.156179] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.164106] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.164109] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.197523] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.199259] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.207103] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.207105] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.240413] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.242281] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.250248] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.250251] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.283666] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.285286] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.293096] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.293099] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.326435] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.328310] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.336133] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.336135] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.369516] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.371298] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.379251] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.379254] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.412670] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.414308] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.422189] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.422192] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.455610] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.457321] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.465390] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.465392] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.498807] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.500325] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.508013] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.508015] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.541343] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.543315] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.551106] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.551108] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.584496] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.586334] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.594132] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.594135] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.627474] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.629320] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.637039] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.637042] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.670450] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.672346] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.680186] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.680189] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.713600] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.715360] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.723251] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.723254] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.756561] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.758257] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.766172] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.766175] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.799583] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.801421] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.809209] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.809212] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.842566] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.844635] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.852637] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.852640] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.886049] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.887412] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.895167] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.895170] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.928505] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.930311] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.938109] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.938112] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1885.971536] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1885.973320] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1885.981647] [akvcam] node.c(254): akvcam_node_poll()
+[ 1885.981650] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.015045] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.016361] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.024321] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.024324] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.057730] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.059310] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.067270] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.067273] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.100689] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.102416] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.110200] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.110203] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.143612] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.145405] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.153588] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.153591] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.186657] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.188288] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.196151] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.196154] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.229570] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.231287] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.239271] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.239274] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.272682] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.274298] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.282341] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.282344] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.315764] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.317355] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.325190] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.325208] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.358487] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.360321] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.368050] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.368052] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.401443] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.402327] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.410081] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.410084] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.443515] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.445360] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.453177] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.453180] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.486507] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.488364] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.496194] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.496197] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.529625] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.531390] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.539435] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.539438] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.572862] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.574445] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.582541] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.582544] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.615963] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.617417] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.625691] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.625695] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.659110] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.660412] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.668402] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.668405] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.701828] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.703405] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.711444] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.711447] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.744861] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.746389] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.754356] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.754359] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.787773] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.789419] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.797134] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.797136] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.830501] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.832428] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.840163] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.840166] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.873583] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.875331] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.883317] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.883321] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.916728] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.918442] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.926426] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.926429] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1886.959843] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1886.961434] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1886.969274] [akvcam] node.c(254): akvcam_node_poll()
+[ 1886.969277] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.002708] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.004424] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.012432] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.012435] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.045824] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.047483] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.055315] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.055318] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.088722] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.090453] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.098269] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.098272] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.131669] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.133465] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.141404] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.141406] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.174708] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.176454] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.184390] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.184393] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.217813] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.219479] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.227203] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.227206] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.260621] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.262327] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.270131] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.270134] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.303529] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.305332] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.313668] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.313672] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.347082] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.348364] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.356257] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.356260] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.389672] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.391355] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.399313] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.399315] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.432728] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.434374] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.442879] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.442882] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.476242] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.477342] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.485186] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.485189] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.518590] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.520387] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.528178] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.528181] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.561600] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.563405] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.571254] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.571258] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.604690] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.606410] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.614292] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.614295] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.647619] [akvcam] ioctl.c(1048): akvcam_ioctl_qbuf()
+[ 1887.649310] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.657346] [akvcam] node.c(254): akvcam_node_poll()
+[ 1887.657350] [akvcam] ioctl.c(1099): akvcam_ioctl_dqbuf()
+[ 1887.681376] [akvcam] node.c(281): akvcam_node_release()
+[ 1887.692250] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.735276] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.779263] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.822333] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.865389] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.908321] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.951404] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1887.994377] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.037428] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.080417] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.123441] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.166447] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.209440] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.252419] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.295438] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.338354] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.381487] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.424519] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.467476] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.510379] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.553392] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.596489] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.639502] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.682416] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.725454] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.768355] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.811240] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.854358] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.897420] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.940410] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1888.983382] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.025421] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.068406] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.110408] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.152458] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.195497] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.238467] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.281496] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.324411] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.367503] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.409438] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.452527] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.495523] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.538463] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.581513] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.624557] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.667546] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.710542] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.753540] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.796579] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.839482] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.882411] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.925426] [akvcam] frame.c(394): Bitmap file name not valid
+[ 1889.967437] [akvcam] frame.c(394): Bitmap file name not valid
+dx@wdp76:~/git/akvcam/src$ cheese
+
+(cheese:18600): Gtk-WARNING **: 10:45:58.312: Theme parsing error: cheese.css:7:35: The style property GtkScrollbar:min-slider-length is deprecated and shouldn't be used anymore. It will be removed in a future version
+Gtk-Message: 10:46:00.768: GtkDialog mapped without a transient parent. This is discouraged.
+
+(cheese:18600): cheese-WARNING **: 10:46:02.524: Device '/dev/video2' is busy: gstv4l2object.c(3754): gst_v4l2_object_set_format_full (): /GstCameraBin:camerabin/GstWrapperCameraBinSrc:camera_source/GstBin:bin19/GstV4l2Src:v4l2src2:
+Call to S_FMT failed for RGB3 @ 960x720: Device or resource busy
+
+
+dx@wdp76:~/git/akvcam/src$ reboot
+
